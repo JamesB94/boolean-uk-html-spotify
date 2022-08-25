@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    /* background-color: #151922; */
+  
+    
+}
+
+.container {
+    display: grid;
+    grid-template:
+
+      "sideNav header header " 70px
+      "sideNav feed  feed " 450px
+      "footer footer footer " 49px/
+        180px   1vh  ;
+   }
+
+   .sideNav {
+    grid-area: sideNav ;
+    border: 1px solid black;
+    background-color: aqua;
+   }
+
+   .header {
+    grid-area: header;
+    border: 1px solid black;
+    background-color: #080b12;
+   }
+
+   .feed {
+    grid-area: feed ;
+    border: 1px solid black;
+    background-color: #151922;
+    overflow-y: auto;
+   }
+
+   .footer {
+    grid-area: footer ;
+    border: 1px solid black;
+
+    background-color: aquamarine;
+   }
+
+
+   .recentlyPlayed {
+    height: 250px;
+    background-color: #151922;
+   }
+   .recentlyPlayed h4{
+    color: white;
+    margin-left: 20px;
+   }
+
+   .personalMixs { 
+    border: 1px dotted black;
+    height: 600px;
+    background-color: orange;
+   }
+
+   .recomended {
+    border: 1px dotted black;
+    height: 600px;
+    background-color: blue;
+   }
+
+   .upgrade {
+    color: white;
+    float: right;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: 50px;
+    margin-top: 10px;
+   }
+
+   .recentlyPlayedImages{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    margin-left: 20px;
+   }
+
+   .insideRecentlyPlayed{
+    display: grid;
+    grid-template-columns: repeat(6, 170px);
+    height: 100px;
+    gap: 5px;
+   }
+
+   .insideRecentlyPlayed img {
+      width:100%;
+      height:80%;
+   }
+
+   .feedNav {
+    display: grid;
+    grid-template-columns: repeat(6, 60px);
+
+    color: #40454b;
+    background-color: #151922;
+    justify-content: center;
+
+    padding-bottom: 10px;
+
+   }
+
+   .feedNav p{
+    text-align: center;
+   }
+
+   .feedNav p:hover {
+    border-bottom: 3px solid green;
+    cursor: pointer;
+   }
+
+   .recentlyPlayedTitle {
+    color: white;
+    text-align: center;
+   }
+
