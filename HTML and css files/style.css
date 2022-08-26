@@ -1,8 +1,8 @@
 *{
     margin: 0%;
     padding: 0%;
-    /* background-color: #151922; */
-  
+    /* background-color: #151922;
+   */
     
 }
 
@@ -30,16 +30,17 @@
 
    .feed {
     grid-area: feed ;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: #151922;
     overflow-y: auto;
    }
 
    .footer {
+    display: grid;
     grid-area: footer ;
     border: 1px solid black;
 
-    background-color: aquamarine;
+    background-color: #282828;
    }
 
 
@@ -107,7 +108,7 @@
     background-color: #151922;
     justify-content: center;
 
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 
    }
 
@@ -140,5 +141,104 @@
    .insideForYouImages {
     margin-top: 20px;
     margin-left: 20px;
+   }
+
+   .playerSection{
+    display: grid;
+    /* border: 1px solid black; */
+    /* grid-template-columns: repeat(2, auto); */
+    grid-template-columns: 180px 1fr 180px ;
+   }
+
+   .currentlyPlaying {
+    /* border: 1px dotted black; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    /* height: 62px; */
+   }
+
+   /* Rename this div */
+
+   .testDiv {
+    /* border: 1px dotted black; */
+    /* text-align: center; */
+    padding: 5px;
+    margin-top: auto2px;
+   }
+   .testDiv p {
+    padding-top: 5px;
+   
+   }
+
+   .testDiv img {
+      width:90%;
+      height:80%;
+   }
+
+   .testDiv i {
+    padding-top: 15px;
+    color: #606060;
+   }
+
+   .testDiv i:hover {
+    color: green;
+    cursor: pointer;
+   }
+
+   .testDiv i + i {
+    padding-left: 10px
+   }
+
+   /* rename this div */
+
+   .player{
+    display: grid;
+    border: 1px dotted white;
+    grid-template-rows: 2 auto;
+    margin: 10px;
+   }
+
+   .playIcons {
+    border: 1px solid white;
+    text-align: center;
+   }
+
+   .playIcons i {
+    color: #ffffff;
+   }
+
+   .playIcons  i +i {
+    padding-left: 20px
+   }
+
+
+   .playerBar {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+   } 
+
+   .timeStamp {
+    padding-top: 5px;
+    
+    font-size: x-small;
+    color: #ffffff;
+   }
+   .playerbarProgress {
+    width: 300px;
+   }
+
+   input[type="range"] {
+    overflow: hidden;
+    height: 5px;
+    width:300px;
+    accent-color: #c1c1c1;
+    
+  }
+
+   .volume {
+    border: 1px dotted white;
+    margin: 20px;
    }
 

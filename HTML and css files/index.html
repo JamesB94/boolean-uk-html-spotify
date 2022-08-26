@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6f98f767cc.js" crossorigin="anonymous"></script>
 
     <title>Document</title>
 </head>
@@ -26,6 +27,7 @@
         <p>SideNav</p>
     </div>
 
+    <!--Feed-->
     <div class="feed">
         <div class="feedNav">
         <p>Music</p>
@@ -187,9 +189,52 @@
         </div> -->
     </div>
 
-
+    <!--footer-->
     <div class="footer">
-        <p>footer</p>
+        <div class="playerSection">
+            <div class="currentlyPlaying">
+                <div class="testDiv">
+                    <img src="/assets/img/sinister.jpeg">
+                </div>
+                <div class="testDiv">
+                    <p style="color:white;">Sinister</p> 
+                    <p style="font-size:x-small; color:#777b81">subtle</p>
+                </div>
+                <div class="testDiv">
+                    <i class="fa-regular fa-heart"></i> 
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+                
+                
+                
+            </div>
+            <div class="player">
+                <div class="playIcons">
+                    <i class="fa-solid fa-repeat"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>   
+                </div>
+                <div class="playerBar">
+                    <div class="timeStamp">
+                        <p>0.25</p>
+                    </div>
+                    <div class="playerbarProgress">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <div class="timeStamp">
+                        <p>4.25</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="volume">
+                <p>volume</p>
+            </div>
+            
+        </div>
     </div>
      
 
