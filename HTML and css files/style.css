@@ -4,6 +4,8 @@
     
 }
 
+/* Layout of page starts here */
+
 .container {
     display: grid;
     grid-template:
@@ -29,7 +31,6 @@
 
    .feed {
     grid-area: feed ;
-    /* border: 1px solid black; */
     background-color: #151922;
     overflow-y: auto;
    }
@@ -37,11 +38,39 @@
    .footer {
     display: grid;
     grid-area: footer ;
-    /* border: 1px solid black; */
-
     background-color: #282828;
    }
 
+   /* Layout of page Ends here */
+
+   /* ///////////////////////////////////////////////////////////////////// */
+
+   /* header css starts here */
+
+   .upgrade {
+    color: white;
+    float: right;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: 50px;
+    margin-top: 10px;
+   }
+   .upgrade:hover {
+    border-color: green;
+   }
+
+
+   /* header css Ends here */
+
+   /* ///////////////////////////////////////////////////////////////////// */
+
+      
+   /* Feed section css starts here */
 
    .recentlyPlayed {
     height: 250px;
@@ -64,22 +93,7 @@
     background-color: blue;
    }
 
-   .upgrade {
-    color: white;
-    float: right;
-    border: 1px solid white;
-    border-radius: 25px;
-    cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin-right: 50px;
-    margin-top: 10px;
-   }
-   .upgrade:hover {
-    border-color: green;
-   }
+   
 
    .recentlyPlayedImages{
     /* border: 1px solid black; */
@@ -150,66 +164,59 @@
     margin-left: 20px;
    }
 
+   /* Feed section css Ends here */
 
-  /* footer player    */
+   /* ///////////////////////////////////////////////////////////////////////// */
+
+  /* footer/player section of css starts here   */
+
    .playerSection{
     display: grid;
-    /* border: 1px solid black; */
-    /* grid-template-columns: repeat(2, auto); */
     grid-template-columns: 180px 1fr 200px ;
    }
 
-   .currentlyPlaying {
-    /* border: 1px dotted black; */
-    
+   .currentlyPlaying {    
     display: grid;
     grid-template-columns: repeat(3, 60px);
-    /* height: 62px; */
    }
 
-   /* Rename this div */
-
-   .testDiv {
-    /* border: 1px dotted black; */
-    /* text-align: center; */
+   .songInfo {
     padding: 5px;
     margin-top: auto2px;
     
    }
 
-   .testDiv p {
+   .songInfo p {
     padding-top: 5px;
    
    }
 
-   .testDiv p:hover {
+   .songInfo p:hover {
     text-decoration: underline;
     cursor: pointer;
    
    }   
 
-   .testDiv img {
+   .songInfo img {
       padding-top: 5px;
       width:90%;
       height:80%;
       cursor: pointer;
    }
 
-   .testDiv i {
+   .songInfo i {
     padding-top: 15px;
     color: #606060;
    }
 
-   .testDiv i:hover {
+   .songInfo i:hover {
     color: green;
     cursor: pointer;
    }
 
-   .testDiv i + i {
+   .songInfo i + i {
     padding-left: 10px
    }
-
-   /* rename this div */
 
    .player{
     display: grid;
@@ -292,8 +299,10 @@
     cursor: pointer;
    }
 
+
    /* footer section of css ends here */
 
+   /* //////////////////////////////////////////////////////////////////////////////////////////// */
 
    /* NavBar section of CSS starts here */
 
